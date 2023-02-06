@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <base href="https://htmlacademy-htmlcss.github.io/2205843-sedona-36/3/">
+</head>
+  <body>
+    <main>
+     <section class="search-form">
+      <h1 class="search-form-title">Поиск гостиницы в Седоне</h1>
+      <a class="button exit-button">
+        <img src="#" alt="Выход">
+      </a>
+      <h2 class="visually-hidden">Даты проживания</h2>
+      <ul class="date-list">
+        <li class="date-item">
+          <input type="date" id="arrival-date" name="Дата Заезда" value="27.04.2020">
+          <label for="arrival-date">Дата Заезда:</label>
+          <p class="date-comment wrong-date">Мы не можем отправить вас в прошлое</p>
+        </li>
+        <li class="date-item">
+          <input type="date" id="departure-date" name="Дата Выезда" value="01.09.2023">
+          <label for="departure-date">Дата Выезда:</label>
+          <p class="date-comment">На эти даты есть свободные номера. Пока есть.</p>
+        </li>
+        <li class="date-item">
+          <span class="minus">
+            <button type="button">-</button>
+            </span>
+          <input type="number" step="1" min="1" max=10 id="number-adults" name="Взрослые" value="2">
+          <label for="number-adults">Взрослые:</label>
+          <span class="plus">
+            <button type="button">+</button>
+            </span>
+        </li>
+        <li class="date-item">
+          <span class="minus">
+            <button type="button">-</button>
+          </span>
+            <input type="number" step="1" min="0" max="10" id="number-children" name="Дети" value="2">
+            <label for="number-children">Дети:</label>
+            <div class="block">
+              <a href="#" class="focus"><img src="#" alt="подробнее"></a>
+              <span class="hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</a></span>
+            </div>
+            <span class="plus">
+              <button type="button">+</button>
+            </span>
+        </li>
+      </ul>
+      <button type="button">Найти</button>
+   </main>
+  </body>
+</html>
